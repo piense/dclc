@@ -29,8 +29,10 @@ Timers:
 
 void sendUnivAgain() {
 	for (int i = 0; i < 512; i++) {
+		
 		sACN_setChannel(universe, i + 1, x);
 	}
+	sACN_setChannel(universe, 1, ((double)(timeInMs() % 5000)) / 5000.0 * 255.0);
 	sACN_incrementSequence(universe);
 	sendUDP(universe->packet, 638, false, 5568);
 	x++;
@@ -38,9 +40,11 @@ void sendUnivAgain() {
 
 int main()
 {
+	initTimers();
+
 	universe = sACN_initUniverse(1);
 
-	startTimer(40, &sendUnivAgain);
+	startTimer(44, &sendUnivAgain);
 
 	while (1) {
 		Sleep(100);

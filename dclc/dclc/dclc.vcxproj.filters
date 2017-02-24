@@ -22,6 +22,9 @@
     <Filter Include="Source Files\timing">
       <UniqueIdentifier>{fdbe687f-683e-4a33-8c78-116cf50f103b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\DMX Processor">
+      <UniqueIdentifier>{8c691b0d-b85b-4cdf-826a-e29068a25fb0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />

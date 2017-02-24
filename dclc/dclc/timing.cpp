@@ -11,6 +11,19 @@ void startTimer(uint16_t rate, void(*cb)()) {
 
 void (*timerCB)();
 
+void initTimers() {
+	//TODO: Possible timer resolution settings if necessary:
+	//timeBeginPeriod
+	//timeEndPeriod
+	if (timeBeginPeriod(5) == TIMERR_NOERROR) {
+		printf("Set begin period to 5 ms.\n");
+	}
+	else {
+		printf("Error setting begin period to 5 ms.\n");
+	}
+
+}
+
 VOID CALLBACK TimerRoutine(PVOID lpParam, BOOLEAN TimerOrWaitFired)
 {
 	if (timerCB != NULL)
@@ -50,4 +63,9 @@ void startTimer(uint16_t rate, void(*cb)()) {
 //		printf("DeleteTimerQueue failed (%d)\n", GetLastError());
 
 	return;
+}
+
+uint64_t timeInMs()
+{
+	return timeGetTime();
 }

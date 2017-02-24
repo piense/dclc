@@ -1,5 +1,4 @@
-﻿  timing.cpp
-  dclc.cpp
-  Generating Code...
+﻿  dclc.cpp
+c:\users\david\documents\github\dclc\dclc\dclc\dclc.cpp(35): warning C4244: 'argument': conversion from 'double' to 'uint8_t', possible loss of data
   dclc.vcxproj -> C:\Users\David\Documents\GitHub\dclc\dclc\Debug\dclc.exe
   dclc.vcxproj -> C:\Users\David\Documents\GitHub\dclc\dclc\Debug\dclc.pdb (Full PDB)
