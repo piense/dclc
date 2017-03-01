@@ -25,6 +25,9 @@
     <Filter Include="Source Files\DMX Processor">
       <UniqueIdentifier>{8c691b0d-b85b-4cdf-826a-e29068a25fb0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\fixture">
+      <UniqueIdentifier>{fd9e0a29-2304-4ea4-a68d-27088b8bc54b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -45,6 +48,12 @@
     <ClInclude Include="timing.h">
       <Filter>Source Files\timing</Filter>
     </ClInclude>
+    <ClInclude Include="fixtureLibrary.h">
+      <Filter>Source Files\fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="fixtureManager.h">
+      <Filter>Source Files\fixture</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -61,6 +70,12 @@
     </ClCompile>
     <ClCompile Include="timing.cpp">
       <Filter>Source Files\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="fixtureLibrary.cpp">
+      <Filter>Source Files\fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="fixtureManager.cpp">
+      <Filter>Source Files\fixture</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
